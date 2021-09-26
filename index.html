@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rescue Game</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="background-game">
+        <div id="start" onclick="start()">
+          <h1>Rescue</h1>
+          <p>
+            Use the Arrow-Up key to move the helicopter up, the Arrow-Down key
+            to move the helicopter down and the Space Key to shot
+          </p>
+          <p>Click here to start the game!!</p>
+        </div>
+      </div>
+    </div>
+    <audio src="sounds/sound.mp3" preload="auto" id="shot-sound"></audio>
+    <audio
+      src="sounds/explosion.mp3"
+      preload="auto"
+      id="explosion-sound"
+    ></audio>
+    <audio src="sounds/background-music.mp3" preload="auto" id="music"></audio>
+    <audio
+      src="sounds/gameover.mp3"
+      preload="auto"
+      id="game-over-sound"
+    ></audio>
+    <audio src="sounds/lost.mp3" preload="auto" id="lost-sound"></audio>
+    <audio src="sounds/rescue.mp3" preload="auto" id="rescue-sound"></audio>
+
+    <script
+      type="text/javascript"
+      src="js/framework/jquery-1.11.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/framework/jquery-collision.min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
